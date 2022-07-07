@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /* ### Neutral */
+
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  min-height: 100vh;
+  width: fit-content;
+  padding: 30px;
+  padding-bottom: 100px;
+  background-color: var(--Very-Light-Gray);
+  font-family: "Poppins";
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* STYLING HEADER SECTION */
+.header-text {
+  text-align: center;
+  color: var(--Very-Dark-Blue);
+}
+
+.header-text h2 span {
+  color: var(--Grayish-Blue);
+  font-weight: 200;
+}
+.header-text p {
+  color: var(--Grayish-Blue);
+  width: 60%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+/* STYLING THE CARD SECTION */
+.card-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-section div {
+  height: 220px;
+  width: 330px;
+  color: var(--Grayish-Blue);
+  padding: 20px;
+  position: relative;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 5px 10px 3px hsla(229, 6%, 66%, 0.4);
+}
+
+.card-section div h1 {
+  font-size: 21px;
+  color: var(--Very-Dark-Blue);
+}
+
+.card-section div p {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.card-1 {
+  border-top: 3px solid var(--Cyan);
+}
+
+.card-2 {
+  border-top: 3px solid red;
+}
+
+.card-3 {
+  border-top: 3px solid var(--Orange);
+}
+
+.card-4 {
+  border-top: 3px solid var(--Blue);
+}
+
+/* STYLING THE MIDDLE PART OF THE CARD SECTION */
+.mid-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* STYLING THE ICONS IN THE CARDS */
+.card-section div img {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 700px) {
+  body {
+    width: initial;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .container {
+    padding: initial;
+    margin: initial;
+    margin-bottom: 15px;
+  }
+  .header-text p {
+    width: 275px;
+  }
+
+  .card-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .mid-cards {
+    gap: 30px;
+  }
+
+  .card-section div p {
+    font-size: 14px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
