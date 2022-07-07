@@ -147,6 +147,11 @@ body {
     gap: 30px;
   }
 
+  .card-section div {
+    width: initial;
+    max-width: 330px;
+  }
+
   .mid-cards {
     gap: 30px;
   }
